@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Mastermind</title>
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
+  <script src="libs/lodash-4.17.15.min.js"></script>
+  <script src="libs/jquery-3.5.0.min.js"></script>
+  <script src="js/mastermind.js"></script>
+  <script src="js/game.js"></script>
+</head>
+
+<body>
+  <div class="game-title">Mastermind</div>
+  <div class="container-wrapper">
+
+    <!-- Game container -->
+    <div id="gameContainer" oncontextmenu="return false;">
+    
+      <div id="userEntries">
+        <!-- ... -->
+      </div>
+
+      <div id="winContainer" class="invisible"><span>You win!</span></div>
+
+      <div id="emptyEntry" class="entry">
+        <div id="emptyLabel" class="label">Try #1</div>
+        <div class="color-combination">
+          <div id="emptyTryColor-0" class="color-token color-empty"></div>
+          <div id="emptyTryColor-1" class="color-token color-empty"></div>
+          <div id="emptyTryColor-2" class="color-token color-empty"></div>
+          <div id="emptyTryColor-3" class="color-token color-empty"></div>
+        </div>
+        <div class="combination-result"></div>
+      </div>
+
+      <div id="colorPicker" class="color-picker">
+        <div class="label">Choose combination</div>
+        <div id="colorPicker-0" class="color-token color-0"></div>
+        <div id="colorPicker-1" class="color-token color-1"></div>
+        <div id="colorPicker-2" class="color-token color-2"></div>
+        <div id="colorPicker-3" class="color-token color-3"></div>
+        <div id="colorPicker-4" class="color-token color-4"></div>
+        <div id="colorPicker-5" class="color-token color-5"></div>
+        <div id="resetButton" class="button color-reset">Reset</div>
+        <div id="checkButton" class="button color-accept bold">Check</div>
+      </div>
+
+    </div>
+  </div>
+</body>
+</html>
