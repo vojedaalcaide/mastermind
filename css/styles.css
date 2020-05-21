@@ -38,30 +38,42 @@ body {
   flex-direction: column;
   align-items: center;
   border: 4px solid #616161;
-  border-radius: 6px;
+  border-radius: 4px;
   padding: 20px;
   background-color: #bbb;
   margin-top: 20px;
+}
+
+#gameContainer {
+  width: 100%;
 }
 
 .color-picker {
   position: relative;
   display: flex;
   align-items: center;
+  justify-content: space-between;
   padding: 16px 8px;
   margin-top: 24px;
-  border: 1px solid black;
-  border-radius: 6px;
+  border: 2px solid #616161;
+  border-radius: 4px;
 }
 .color-picker .color-token {
   cursor: pointer;
 }
+.color-picker-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-left: 16px;
+}
 .label {
   position: absolute;
   padding: 0 6px;
-  top: -10px;
+  top: -12px;
   color: rgba(0, 0, 0, 0.8);
   background-color: #bbb;
+  font-size: 1.1rem;
 }
 .button {
   padding: 3px 10px;
@@ -98,8 +110,8 @@ body {
   align-items: center;
   justify-content: space-between;
   padding: 16px 8px;
-  border: 1px solid black;
-  border-radius: 6px;
+  border: 2px solid #616161;
+  border-radius: 4px;
 }
 .entry:not(last-child) {
   margin-bottom: 24px;
@@ -121,10 +133,19 @@ body {
   color: greenyellow;
 }
 
+/* MOBILE DEVICES */
+/* @media screen and (max-device-width: 480px) {
+ 
+  .container-wrapper {
+    width: 90vw;
+  }
+  
+} */
+
 /* COLORS */
 .color-0 {
   /* background-color: #f00; */
-  background: radial-gradient(circle at 14px 8px, #f00, #900);
+  background: radial-gradient(circle at 14px 8px, #ff4949, #900);
   border-color: #900;
 }
 .color-1 {
