@@ -153,7 +153,7 @@ body {
   border-color: #060;
 }
 .color-2 {
-  background: radial-gradient(circle at 14px 8px, #3369ff, #005);
+  background: radial-gradient(circle at 14px 8px, #4879fd, #005);
   border-color: #005;
 }
 .color-3 {
@@ -161,7 +161,7 @@ body {
   border-color: #990;
 }
 .color-4 {
-  background: radial-gradient(circle at 14px 8px, #f0f, #a700a7);
+  background: radial-gradient(circle at 14px 8px, #ff49ff, #a700a7);
   border-color: #a700a7;
 }
 .color-5 {
